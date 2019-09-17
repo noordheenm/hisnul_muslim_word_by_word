@@ -149,7 +149,7 @@ const DUA_WORDS = const [
   ),
   const Words(
     id:29, 
-    english:'me',
+    english:'to me',
     arabic:'لي',
   ),
   const Words(
@@ -209,12 +209,253 @@ const DUA_WORDS = const [
   ),
   const Words(
     id:40, 
-    english:'He',
-    arabic:'وهوَ',
+    english:'Indeed',
+    arabic:'إِنَّ',
   ),
   const Words(
     id:41, 
-    english:'He',
-    arabic:'وهوَ',
+    english:'(the) creation',
+    arabic:'خَلْقِ',
   ),
+    const Words(
+    id:42, 
+    english:'(of) the heavens',
+    arabic:'السَّمَوَاتِ',
+  ),
+  const Words(
+    id:43, 
+    english:'and the earth',
+    arabic:'الأَرْضِ',
+  ),
+    const Words(
+    id:44, 
+    english:'(in the) alternation',
+    arabic:'اخْتِلاَفِ',
+  ),
+  const Words(
+    id:45, 
+    english:'(of) the night',
+    arabic:'اللَّيْلِ',
+  ),
+    const Words(
+    id:46, 
+    english:'the day',
+    arabic:'النَّهَارِ',
+  ),
+  const Words(
+    id:47, 
+    english:'(are) surely Signs',
+    arabic:'لآيَاتٍ',
+  ), 
+    const Words(
+    id:48, 
+    english:'for men',
+    arabic:'لأُوْلِي',
+  ),
+  const Words(
+    id:49, 
+    english:'(of) understanding',
+    arabic:'الألْبَابِ',
+  ),
+    const Words(
+    id:50, 
+    english:'Those who',
+    arabic:'الَّذِينَ',
+  ),
+  const Words(
+    id:51, 
+    english:'they remember',
+    arabic:'يَذْكُرُونَ',
+  ),
+    const Words(
+    id:52, 
+    english:'standing',
+    arabic:'قِيَامًا',
+  ),
+  const Words(
+    id:53, 
+    english:'sitting',
+    arabic:'قُعُودًا',
+  ),
+    const Words(
+    id:54, 
+    english:'on',
+    arabic:'عَلَىَ',
+  ),
+  const Words(
+    id:55, 
+    english:'their sides',
+    arabic:'جُنُوبِهِمْ',
+  ),
+    const Words(
+    id:56, 
+    english:'they reflect',
+    arabic:'يَتَفَكَّرُونَ',
+  ),
+  const Words(
+    id:57, 
+    english:'Our Lord',
+    arabic:'رَبَّنَا',
+  ),
+    const Words(
+    id:58, 
+    english:'not',
+    arabic:'مَا',
+  ),
+  const Words(
+    id:59, 
+    english:'You have created',
+    arabic:'خَلَقْتَ',
+  ),
+    const Words(
+    id:60, 
+    english:'this',
+    arabic:'هَذا',
+  ),
+  const Words(
+    id:61, 
+    english:'(in)vain',
+    arabic:'بَاطِلاً',
+  ),
+    const Words(
+    id:62, 
+    english:'Glory be to You',
+    arabic:'سُبْحَانَكَ',
+  ),
+  const Words(
+    id:63, 
+    english:'so save us',
+    arabic:'فَقِنَا',
+  ),
+    const Words(
+    id:64, 
+    english:'(from the) punishment',
+    arabic:'عَذَابَ',
+  ),
+  const Words(
+    id:65, 
+    english:'(of) the Fire',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:66, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:67, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:68, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:69, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:70, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:71, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:72, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:73, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:74, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:75, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:76, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:77, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:78, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:79, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:80, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:81, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:82, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:83, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:84, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:85, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:86, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:87, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:88, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+  const Words(
+    id:89, 
+    english:'He',
+    arabic:'النَّار',
+  ),
+
 ];

@@ -23,6 +23,7 @@ class Dua {
   final bool isSahih;
   final bool isSahihain;
   final List<int> word;
+  final bool isQuran;
 
   const Dua({
     @required this.id,
@@ -38,7 +39,7 @@ class Dua {
     @required this.isMuslim,
     @required this.isSahihain,
     @required this.isSahih, 
-    @required this.word
-
+    @required this.word,
+    @required this.isQuran, 
   });
 }
