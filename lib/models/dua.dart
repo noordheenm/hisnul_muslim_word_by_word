@@ -21,6 +21,7 @@ class Dua {
   final bool isBukhari;
   final bool isMuslim;
   final bool isSahih;
+  final String reference;
   final bool isSahihain;
   final List<int> word;
   final bool isQuran;
@@ -39,6 +40,7 @@ class Dua {
     @required this.isMuslim,
     @required this.isSahihain,
     @required this.isSahih, 
+    @required this.reference,
     @required this.word,
     @required this.isQuran, 
   });

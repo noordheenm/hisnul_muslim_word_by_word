@@ -11,14 +11,14 @@ class DuaDetailsScreen extends StatelessWidget {
 
   DuaDetailsScreen(this.toggleFavorites, this._isDuaFavorities);
 
-  Widget buildSectionTitle(BuildContext context, String text,TextAlign aligns) {
+  Widget buildSectionTitle(BuildContext context, String text,TextAlign aligns,Color color,Color textColor) {
     return InkWell(
       highlightColor: Colors.black,
       child: Card(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
-        color: Color.fromRGBO(255, 215, 220, 1),
+        color: color,
         elevation: 4,
         margin: EdgeInsets.all(10),
         child:Container(
@@ -26,7 +26,7 @@ class DuaDetailsScreen extends StatelessWidget {
       padding: EdgeInsets.all(10),
       child: Text(
         text,
-        style: TextStyle(color: Colors.black, fontSize: 22,),textAlign: aligns,/*  */
+        style: TextStyle(color: textColor, fontWeight: FontWeight.bold,fontSize: 22,),textAlign: aligns,/*  */
         ),
       ),
     ), );
@@ -85,7 +85,8 @@ class DuaDetailsScreen extends StatelessWidget {
               ),
               itemCount: selectedDua.subTitle.length,
             )), */
-            buildSectionTitle(context, 'This Dua Contains '+selectedDua.wordCount.toString()+' words only',TextAlign.center),
+           // buildSectionTitle(context, 'This Dua Contains '+selectedDua.wordCount.toString()+' words only',TextAlign.center),
+           buildSectionTitle(context, selectedDua.title,TextAlign.center,Colors.pink,Colors.white),
             buildContainer(
               ListView.builder(
                 itemBuilder: (ctx, index) => Column(
@@ -101,7 +102,7 @@ class DuaDetailsScreen extends StatelessWidget {
                           textAlign: TextAlign.right,
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -109,7 +110,7 @@ class DuaDetailsScreen extends StatelessWidget {
                           child: Text('#${(index + 1)}',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),),
                           backgroundColor: Colors.pink,
@@ -123,10 +124,10 @@ class DuaDetailsScreen extends StatelessWidget {
                 itemCount: selectedDua.word.length,
               ),
             ),
-            buildSectionTitle(context, selectedDua.duaArabic, TextAlign.right),
-            buildSectionTitle(context, selectedDua.duaEnglish,TextAlign.left),
-             buildSectionTitle(context, '--Sahih Hadith--',TextAlign.center),
-               buildSectionTitle(context, '--Dua End--',TextAlign.center),
+            buildSectionTitle(context, selectedDua.duaArabic, TextAlign.right,Color.fromRGBO(255, 215, 220, 1),Colors.black),
+            buildSectionTitle(context, selectedDua.duaEnglish,TextAlign.left,Color.fromRGBO(255, 215, 220, 1),Colors.black),
+             buildSectionTitle(context, 'Reference(s):'+selectedDua.reference,TextAlign.center,Colors.pink,Colors.white),
+             buildSectionTitle(context, 'Total Words:'+selectedDua.wordCount.toString(),TextAlign.center,Color.fromRGBO(255, 215, 220, 1),Colors.black),
           ],
         ),
       ),

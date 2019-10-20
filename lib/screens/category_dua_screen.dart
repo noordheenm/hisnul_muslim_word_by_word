@@ -58,7 +58,8 @@ class _CategoryDuasScreenState extends State<CategoryDuasScreen> {
         itemBuilder: (ctx, index) {
           return DuaItem(
               id: displayedDuas[index].id,
-              title: displayedDuas[index].duaArabic,
+              title: displayedDuas[index].title,
+              contentAr: displayedDuas[index].duaArabic,
               imageUrl: displayedDuas[index].imageUrl,
               duration: displayedDuas[index].wordCount,
               affordability: displayedDuas[index].affordability,

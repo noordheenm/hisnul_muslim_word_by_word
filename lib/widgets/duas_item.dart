@@ -5,6 +5,7 @@ import '../models/dua.dart';
 class DuaItem extends StatelessWidget {
   final String id;
   final String title;
+  final String contentAr;
   final String imageUrl;
   final int duration;
   final Complexity complexity;
@@ -14,6 +15,7 @@ class DuaItem extends StatelessWidget {
   DuaItem({
     @required this.id,
     @required this.title,
+    @required this.contentAr,
     @required this.imageUrl,
     @required this.affordability,
     @required this.complexity,
@@ -86,6 +88,37 @@ class DuaItem extends StatelessWidget {
         margin: EdgeInsets.all(10),
         child: Column(
           children: <Widget>[
+
+          Padding(
+              padding: EdgeInsets.all(10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.book,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 6,
+                      ),
+                      Text(
+                        ('$title'.length>32)?'$title'.substring(0,32)+"...":'$title',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  
+                ],
+              ),
+            ),
+
+
             Stack(
               children: <Widget>[
                 ClipRRect(
@@ -97,7 +130,7 @@ class DuaItem extends StatelessWidget {
                    child: Image.asset(
                    // imageUrl,
                    '',
-                    height: 150,
+                    height: 80,
                     width: double.infinity,
                     fit: BoxFit.cover,
                     color: Colors.black,
@@ -114,11 +147,10 @@ class DuaItem extends StatelessWidget {
                     width: 300,
                     color: Colors.white, //.fromRGBO(255, 215, 220, 1),
                     padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                     child:  SingleChildScrollView(
-             
-                      padding: const EdgeInsets.all(4.0),
                       child: Text(
-                        title,
+                        (contentAr.length>42)?
+                          "....."+contentAr.substring(0,42)
+                          : contentAr,
                         style: TextStyle(
                           fontSize: 27,
                           color: Colors.black,
@@ -127,7 +159,7 @@ class DuaItem extends StatelessWidget {
                         softWrap: true,
                         overflow: TextOverflow.fade,
                       ),
-                    ),
+                   
                   ),
                 )
               ],

@@ -27,6 +27,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  intl: ^0.15.8
+  path_provider: any
+  sqflite: any
+  fluttertoast: any
 
   flutter_launcher_icons: ^0.7.3
   

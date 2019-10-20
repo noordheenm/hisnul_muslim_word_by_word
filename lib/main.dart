@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './hisnul_data.dart';
+import 'config/database_helper.dart';
 import 'models/dua.dart';
 import 'screens/filter_screen.dart';
 import 'screens/dua_details_screen.dart';
@@ -21,7 +22,7 @@ class _MyAppState extends State<MyApp> {
     'sahih':false,
     'sahihain':false,
   };
-  
+  final dbHelper = DatabaseHelper.instance;
   List<Dua> _availableDuas = HISNUL_DUAS;
 
   List<Dua> _favoriteDuas = [];
@@ -76,7 +77,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primarySwatch: Colors.pink,
-          accentColor: Colors.pink,
+          accentColor: Colors.white,
           canvasColor: Color.fromRGBO(255, 254, 229, 1),
           fontFamily: 'Raleway',
           textTheme:
@@ -126,3 +127,7 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
+
+
+
+

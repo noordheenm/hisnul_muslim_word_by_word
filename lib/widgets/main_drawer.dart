@@ -32,11 +32,11 @@ class MainDrawer extends StatelessWidget {
             alignment: Alignment.centerLeft,
             color: Theme.of(context).accentColor,
             child: Text(
-              'Start Memorize!!!',
+              'Hisnul Muslim Page Details',
               style: TextStyle(
                 fontWeight: FontWeight.w900,
                 fontSize: 30,
-                color: Colors.white,
+                color: Colors.pink,
               ),
             ),
           ),

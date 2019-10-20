@@ -187,15 +187,10 @@ const DUA_WORDS = const [
     english:'my soul',
     arabic:'روحي',
   ),
-    const Words(
-    id:36, 
-    english:'allowed',
-    arabic:'أَذِنَ',
-  ),
   const Words(
     id:37, 
-    english:'and He',
-    arabic:'وهوَ',
+    english:'allowed',
+    arabic:'أَذِنَ',
   ),
   const Words(
     id:38, 
@@ -339,8 +334,8 @@ const DUA_WORDS = const [
   ),
   const Words(
     id:66, 
-    english:'He',
-    arabic:'النَّار',
+    english:'allowed',
+    arabic:'أَذِنَ',
   ),
   const Words(
     id:67, 

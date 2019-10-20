@@ -21,7 +21,7 @@ class _TabsScreenState extends State<TabsScreen> {
     _pages = [
     {
       'page': CategoriesScreen(),
-      'title': 'Categories',
+      'title': 'Hisnul Muslim Word by Word',
     },
     {
       'page': FavoritesScreen(widget._favoriteDuas),
@@ -45,13 +45,13 @@ class _TabsScreenState extends State<TabsScreen> {
           _pages[_selectedPageIndex]['title'],
         ),
       ),
-      drawer: MainDrawer(),
+     // drawer: MainDrawer(),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Color.fromRGBO(255, 240, 200, 1),
         unselectedItemColor: Colors.white,
-        selectedItemColor: Theme.of(context).accentColor,
+        selectedItemColor: Color.fromRGBO(255, 80, 200, 1),
         currentIndex: _selectedPageIndex,
         type: BottomNavigationBarType.shifting,
         items: [

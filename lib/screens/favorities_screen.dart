@@ -19,7 +19,7 @@ class FavoritesScreen extends StatelessWidget {
         itemBuilder: (ctx, index) {
           return DuaItem(
               id: _favoriteDuas[index].id,
-              title: _favoriteDuas[index].duaArabic,
+              contentAr: _favoriteDuas[index].duaArabic,
               imageUrl: _favoriteDuas[index].imageUrl,
               duration: _favoriteDuas[index].wordCount,
               affordability: _favoriteDuas[index].affordability,
